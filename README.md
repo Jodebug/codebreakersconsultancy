@@ -2,17 +2,17 @@
 
 Static website for Codebreakers Consultancy.
 
-## Files
+## Site files
 
 - `index.html` — home page
 - `about.html` — company and services overview
-- `appointments.html` — consultation and booking page
+- `appointments.html` — consultation request page
 - `styles.css` — shared layout, colours and responsive styling
-- `script.js` — mobile navigation behaviour
-- `logo-cc.svg` — main CC data-themed brand mark
+- `script.js` — mobile navigation and appointment request behaviour
+- `logo-cc.svg` — CC data-themed brand mark
 - `favicon.svg` — browser icon
 
-All pages are kept in the same folder so the site can be uploaded directly to a simple static host or GitHub Pages without nested page paths.
+All website files are kept at the repository root so the site works cleanly on GitHub Pages without nested page folders.
 
 ## Running locally
 
@@ -20,10 +20,8 @@ Open `index.html` in a browser, or use a local development server such as the VS
 
 ## Editing the site
 
-Page wording is stored in the three HTML files. Shared visual styling is in `styles.css`, and the responsive navigation is handled by `script.js`.
+Page content is stored in the three HTML files. Shared styling is in `styles.css`, while `script.js` handles the responsive navigation and appointment request form.
 
-The appointments page currently links to the existing third-party scheduling Scheduling booking page. No customer form data is collected or stored by this website itself.
+The appointments page does not use Acuity or another scheduling platform. Visitors can enter their preferred date, time and message, then the site opens their email application with a consultation request pre-filled for `Jo@CodebreakersConsultancy.onmicrosoft.com`.
 
-## Contact details
-
-The current email link is `Jo@CodebreakersConsultancy.onmicrosoft.com`. Update it in the HTML files if the business email address changes.
+The website itself does not store appointment form data.
